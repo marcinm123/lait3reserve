@@ -19,6 +19,7 @@ public class ReservationTest {
 		driver = Init.getDriver();
 	}
 	
+	@Ignore
 	@Test
 	public void loginWithPageObjects() {
 		//System.out.println("--test3");

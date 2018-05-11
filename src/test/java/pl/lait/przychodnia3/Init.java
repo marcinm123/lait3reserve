@@ -80,7 +80,7 @@ public class Init {
 			File srcFile = ((TakesScreenshot)driver_tmp).getScreenshotAs(OutputType.FILE);
 
 			try {
-				FileUtils.copyFile(srcFile, new File("E:\\screenshot-"+milis+".png"));
+				FileUtils.copyFile(srcFile, new File("target/screenshot-"+milis+".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
