@@ -63,7 +63,7 @@ public class ReservationTest {
 		
 		reserv3Page.securePurchaseButtonClick();
 		Init.sleep(10);
-
+		Init.printScr(driver);
 	}
 	
 	@After
