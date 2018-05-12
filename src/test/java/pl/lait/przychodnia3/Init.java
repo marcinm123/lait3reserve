@@ -18,6 +18,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
+
 public class Init {
 
 	static WebDriver driver = null;
