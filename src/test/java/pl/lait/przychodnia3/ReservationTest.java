@@ -2,6 +2,8 @@ package pl.lait.przychodnia3;
 
 
 
+import java.io.IOException;
+
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 
@@ -64,7 +66,12 @@ public class ReservationTest {
 		
 		reserv3Page.securePurchaseButtonClick();
 		Init.sleep(10);
-		Init.printScr(driver);
+		try {
+			Init.printScr(driver);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	@After

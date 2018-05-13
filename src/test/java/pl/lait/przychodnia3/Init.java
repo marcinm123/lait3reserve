@@ -90,7 +90,7 @@ public class Init {
 		System.out.println(" ---");
 	}
 
-	public static void printScr(WebDriver driver) {
+	public static void printScr(WebDriver driver) throws IOException {
 		Timestamp timestamp = new Timestamp (System.currentTimeMillis()); 
 		Long milis = timestamp.getTime();
 	
@@ -98,10 +98,10 @@ public class Init {
 		WebDriver driver_tmp = new Augmenter().augment(driver);
 			File srcFile = ((TakesScreenshot)driver_tmp).getScreenshotAs(OutputType.FILE);
 
-			try {
+			//try {
 				FileUtils.copyFile(srcFile, new File("target/screenshot-"+milis+".png"));
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			//} catch (IOException e) {
+			//	e.printStackTrace();
+			//}
 	    }
 }
